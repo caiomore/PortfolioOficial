@@ -1,0 +1,140 @@
+.sobre {
+  padding-top: 10rem;
+}
+
+.sobre__container {
+  padding: 0 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sobre__imagem {
+  width: 86vw;
+  object-fit: cover;
+  border-radius: 0.625rem;
+  object-position: top;
+}
+
+.sobre__texto {
+  text-align: justify;
+  margin-top: 2.313rem;
+}
+
+.texto {
+  color: var(--cor-texto-primario);
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+  line-height: 1rem;
+}
+
+.habilidades__container {
+  display: flex;
+  justify-content: center;
+}
+
+.habilidades__linha {
+  border-color: var(--cor-ID-primario);
+  margin-bottom: 1.5rem;
+}
+
+.habilidades__lista {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.habilidades__images {
+  width: 7vw;
+}
+
+.habilidades__titulo {
+  padding-left: 1.8rem;
+  color: var(--cor-texto-primario);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 428px) {
+
+  .sobre__imagem {
+    width: 80vw;
+    height: 22.063rem;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+  .sobre__container {
+    display: grid;
+    padding: 0 5.125rem;
+    column-gap: 4.438rem;
+  }
+
+  .sobre__imagem {
+    width: 17.5rem;
+    height: 35.375rem;
+    grid-column: 1/2;
+  }
+
+  .sobre__texto {
+    grid-column: 2/2;
+    margin: 0;
+  }
+
+  .texto {
+    font-size: 1.25rem;
+    line-height: 1.35rem;
+  }
+
+  .habilidades__titulo {
+    font-size: 1.438rem;
+  }
+
+  .habilidades__container {
+    padding-top: 4.5rem;
+  }
+
+  .habilidades__lista {
+    gap: 0.5rem;
+  }
+
+  .habilidades__images {
+    width: 3.688rem;
+  }
+}
+
+
+@media screen and (min-width: 1728px) {
+
+  .sobre {
+    padding-top: 30rem;
+  }
+
+  .sobre__container__sobreposição {
+    display: grid;
+  }
+
+  .sobre__container {
+    padding: 0 8rem;
+    column-gap: 7.8rem;
+  }
+
+  .sobre__imagem {
+    width: 28.44rem;
+    height: 43.047rem;
+    grid-column: 1/2;
+  }
+
+  .sobre__texto {
+    grid-column: 2/2;
+  }
+
+  .habilidades__lista {}
+
+
+}

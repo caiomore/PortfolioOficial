@@ -1,59 +1,53 @@
-@‌import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url(/styles/reset.css);
+@import url(/styles/cabeçalho.css);
+@import url(/styles/home.css);
+@import url(/styles/sobre.css);
+@import url(/styles/projetos.css);
+@import url(/styles/contato.css);
+@import url(/styles/footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 
 :root {
+  --cor-fundo: #000000;
+  --cor-primeiro-plano: #363636;
+  --cor-segundo-plano: #0A1240;
+  --cor-texto-primario: #FFFFFF;
+  --cor-texto-secundario: #a7a6a6;
+  --cor-ID-primario: #08A63F;
+  --cor-ID-secundario: #1730BF;
+  --cor-ID-terciario: #0F228C;
+  --cor-ID-quatro: #1127B3;
+  --cor-degrade-fundo: linear-gradient(28deg, rgba(0, 0, 0, 0.25) 0%, rgba(8, 166, 63, 0.25) 100%), #000;
+  --cor-degrade-texto: linear-gradient(20deg, #1A37D9 0%, rgba(8, 166, 63, 0.79) 100%);
 
-    --cor-fundo: #000000 ;
-    --cor-primeiro-plano: #363636;
-    --cor-segundo-plano: #0A1240;
-    --cor-texto-primario: #EEEEEE;
-    --cor-texto-secundario: #a7a6a6;
-    --cor-ID-primario: #08A63F;
-    --cor-ID-secundario: #1730BF;
-    --cor-ID-terciario: #0F228C;
+  --font-primaria: 'Montserrat', sans-serif;
+  --font-secundaria: 'Roboto', sans-serif;
 
-    --font-primaria: 'Montserrat', sans-serif;
-    --font-secundaria: 'Roboto', sans-serif;
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
+  --trasições: 0.7s;
 }
 
 body {
-    background-color: var(--cor-primaria);
+  background: var(--cor-fundo);
+  font-family: var(--font-primaria);
 }
 
-.cabecalho {
-
+.page__titulo {
+  color: var(--cor-texto-primario);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+  margin: 0 0 2rem 10vw;
 }
 
-.cabecalho__logotipo {
-
+.seminegrito {
+  font-weight: 600;
 }
 
-.cabecalho__menu {
-
+.negrito {
+  font-weight: bold;
 }
 
-.cabecalho__menu__link {
-
-}
-
-
-
-
-
-.rodape {
-
-}
-
-.rodape__paragrafo {
-    text-transform: uppercase;
-}
-
-.rodape__paragrafo__link {
-    text-decoration: none;
-    color: black;
+.italico {
+  font-style: italic;
 }

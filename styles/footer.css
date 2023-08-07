@@ -1,0 +1,35 @@
+footer {
+    background-color: var(--cor-primeiro-plano);
+  }
+  
+  .rodapé {
+    text-align: center;
+  }
+  
+  .rodapé__créditos {
+    color: var(--cor-texto-primario);
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+  }
+  
+  .rodapé__créditos__link {
+    color: var(--cor-ID-primario);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .rodapé__redes {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rodapé__redes__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 0 0.8rem;
+    margin: 1.5rem 0;
+  }
+  
+  .rodapé__redes-link {
+    width: 2.8rem;
+  }

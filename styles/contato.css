@@ -1,0 +1,177 @@
+.contato {
+  display: flex;
+  margin-top: 7rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato__titulo {
+  text-transform: uppercase;
+  color: var(--cor-ID-primario);
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0.900rem;
+}
+
+.contato__subtitulo {
+  color: var(--cor-texto-primario);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contato__descrição {
+  font-size: 1rem;
+  color: var(--cor-texto-primario);
+  font-weight: 400;
+  width: 86vw;
+  text-align: center;
+}
+
+.formulário {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0.8rem;
+  gap: 0.5rem 0;
+}
+
+.formulário__label {
+  color: var(--cor-texto-primario);
+  width: 100%;
+}
+
+.formulário__placeholders {
+  padding: 0 0.8rem 0 0.8rem;
+  border: none;
+  width: 80vw;
+  height: 3rem;
+  background-color: var(--cor-primeiro-plano);
+  outline: none;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  color: var(--cor-texto-primario);
+  font-family: var(--font-secundaria);
+}
+
+.formulário__mensagem {
+  background-color: var(--cor-primeiro-plano);
+  padding: 0.8rem 0.8rem 0.4rem 0.8rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: var(--cor-texto-primario);
+  font-family: var(--font-secundaria);
+  width: 80vw;
+  border-radius: 0.2rem;
+}
+
+.formulário__btn {
+  margin-top: 0.5rem;
+  margin-bottom: 4.75rem;
+  width: 87vw;
+  height: 3rem;
+  border-radius: 0.625rem;
+  outline: none;
+  border: none;
+  background-color: var(--cor-ID-primario);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-primaria);
+  color: var(--cor-texto-primario);
+  text-transform: uppercase;
+}
+
+.contato__redirecionadores {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.redirecionadores {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 4rem 0;
+}
+
+.redirecionadores__img {
+  width: 4rem;
+  margin-bottom: 1.563rem;
+}
+
+.redirecionadores__titulo {
+  color: var(--cor-ID-quatro);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.07rem;
+  font-size: 1rem;
+  margin-bottom: 0.852rem;
+}
+
+.redirecionadores__texto {
+  color: var(--cor-primeiro-plano);
+}
+
+.redirecionadores__link {
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 428px) {
+
+  .formulário {
+    padding-top: 2rem;
+  }
+
+  .formulário__btn {
+    width: 67vw;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .contato__titulo {
+    font-size: 1.438rem;
+  }
+
+  .contato__subtitulo {
+    font-size: 2.813rem;
+    margin-bottom: 1rem;
+  }
+
+  .contato__descrição {
+    font-size: 1.563rem;
+    width: 65vw;
+    font-weight: 400;
+  }
+
+  .contato__redirecionadores {
+    margin-bottom: 6.938rem;
+  }
+
+  .redirecionadores {
+    flex-direction: row;
+    column-gap: 15vw;
+  }
+
+  .formulário__placeholders {
+    width: 50.688rem;
+  }
+
+  .formulário__mensagem {
+    width: 50.688rem;
+  }
+
+  .formulário__btn {
+    height: 5rem;
+    font-size: 1.75rem;
+    margin-bottom: 7.188rem;
+  }
+}
+
+@media screen and (min-width: 1728px) {}

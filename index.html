@@ -6,28 +6,307 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="croppie.css"/>
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho__logotipo" src="" alt="Logo">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="">Home</a>
-            <a class="cabecalho__menu__link" href="">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="">Projetos</a>
-            <a class="cabecalho__menu__link" href="">Contato</a>
-        </nav>
+    <header class="cabeçalho">
+        <div class="container">
+            <h2 class="cabeçalho__logo">CM<span class="cabeçalho__logo__ponto">.</span></h2>
+
+            <input type="checkbox" id="checkbox-menu" class="checkbox-menu">
+            <label for="checkbox-menu" class="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="cabeçalho__menu">
+                <li class="cabeçalho__menu__item"><a class="cabeçalho__menu__link" href="#">Home</a></li>
+                <li class="cabeçalho__menu__item"><a class="cabeçalho__menu__link" href="#">Sobre mim</a></li>
+                <li class="cabeçalho__menu__item"><a class="cabeçalho__menu__link" href="#">Projetos</a></li>
+                <li class="cabeçalho__menu__item"><a class="cabeçalho__menu__link" href="#">Contato</a></li>
+            </ul>
+
+            <ul class="cabeçalho__menu2">
+                <li class="cabeçalho__menu__item2"><a class="cabeçalho__menu__link2" href="#">Home</a></li>
+                <li class="cabeçalho__menu__item2"><a class="cabeçalho__menu__link2" href="#">Sobre mim</a></li>
+                <li class="cabeçalho__menu__item2"><a class="cabeçalho__menu__link2" href="#">Projetos</a></li>
+                <li class="cabeçalho__menu__item2"><a class="cabeçalho__menu__link2" href="#">Contato</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
+        <section class="home">
+            <img src="/images/CM.png" class="home__logo" alt="Logo Caio Moreira.">
 
+            <div class="home__habilidades">
+                <ul class="habilidades__lista">
+                    <li class="habilidades__item"><img class="habilidades__home" src="/images/html5.png"
+                            alt="Logo do HTML5."></li>
+                    <li class="habilidades__item"><img class="habilidades__home" src="/images/css3.png"
+                            alt="Logo do CSS3."></li>
+                    <li class="habilidades__item"><img class="habilidades__home" src="/images/js.png"
+                            alt="Logo do Javascript."></li>
+                    <li class="habilidades__item"><img class="habilidades__home" src="/images/typescript.png"
+                            alt="Logo do Typescript."></li>
+                    <li class="habilidades__item"><img class="habilidades__home" src="/images/vuejs.png"
+                            alt="Logo do Vue.js"></li>
+                    <li class="habilidades__item"><img class="habilidades__home" src="/images/nodejs.png"
+                            alt="Logo do Node.js"></li>
+                    <li class="habilidades__item"><img class="habilidades__home" src="/images/mysql.png"
+                            alt="Logo do MySQL."></li>
+                    <li class="habilidades__item"><img class="habilidades__home" src="/images/figma.png"
+                            alt="Logo do Figma."></li>
+                </ul>
+            </div>
+
+            <div class="home__texto">
+                <h2 class="home__texto__titulo">Caio Moreira</h2>
+                <h6 class="home__texto__subtitulo">FrontEnd Developer</h6>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <h2 class="page__titulo">Sobre</h2>
+
+            <div class="sobre__container__sobreposição">
+                <div class="sobre__container">
+                    <img id="imagem" class="sobre__imagem" src="/images/image_5.jpg" alt="Foto do Caio Moreira.">
+
+                    <div class="sobre__texto">
+                        <p class="texto">Olá! Meu nome é Caio Moreira, prazer em conhecê-lo. Estudo Análise e
+                            Desenvolvimento de sistemas na
+                            faculdade
+                            Impacta, e
+                            programação do Alura. Tenho perfil workaholic com visão voltado para resultados, otimização
+                            de
+                            processos e ampla gama de disciplinas de design, empreendimento, desenvolvimento, música,
+                            viajem,
+                            fotografia, produção musical e audiovisual.</p>
+
+                        <p class="texto">Em 2018, decidi tentar entender o funcionamento das coisas quando se trata de
+                            internet,
+                            softwares e
+                            jogos que eu jogava na época. Sempre me chamou a atenção as configurações, mecanismos, e
+                            <span class="negrito">PROGRAMAÇÃO</span> em si de cada <span class="italico">“coisa”</span>
+                            que
+                            eu usava no computador, consoles, celular e outros.
+                            Hoje,
+                            entendo o funcionamento, e amo colocar a mão na massa para dar cara e vida aos algoritmos.
+                        </p>
+
+                        <p class="texto">Avançando para hoje, tenho o privilégio de construir softwares para uma <span
+                                class="seminegrito">agência de
+                                marketing</span>, <span class="seminegrito">duas
+                                igrejas</span> e uma <span class="seminegrito">start-up</span>.</p>
+                    </div>
+                </div>
+
+                <div class="habilidades__container">
+                    <div class="habilidades">
+                        <hr class="habilidades__linha">
+
+                        <ul class="habilidades__lista">
+                            <li class="habilidades__item"><img class="habilidades__images" src="/images/html5.png"
+                                    alt="Logo do HTML5."></li>
+                            <li class="habilidades__item"><img class="habilidades__images" src="/images/css3.png"
+                                    alt="Logo do CSS3."></li>
+                            <li class="habilidades__item"><img class="habilidades__images" src="/images/js.png"
+                                    alt="Logo do Javascript."></li>
+                            <li class="habilidades__item"><img class="habilidades__images" src="/images/typescript.png"
+                                    alt="Logo do Typescript."></li>
+                            <li class="habilidades__item"><img class="habilidades__images" src="/images/vuejs.png"
+                                    alt="Logo do Vue.js"></li>
+                            <li class="habilidades__item"><img class="habilidades__images" src="/images/nodejs.png"
+                                    alt="Logo do Node.js"></li>
+                            <li class="habilidades__item"><img class="habilidades__images" src="/images/mysql.png"
+                                    alt="Logo do MySQL."></li>
+                            <li class="habilidades__item"><img class="habilidades__images" src="/images/figma.png"
+                                    alt="Logo do Figma."></li>
+                        </ul>
+                    </div>
+
+                    <div class="habilidades__texto">
+                        <h2 class="habilidades__titulo">HABILIDADES</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projetos">
+            <h2 class="page__titulo">Projetos</h2>
+
+            <div class="projetos__container">
+                <div class="projetos__card">
+
+                    <img class="projetos__card-img" src="/images/Site_CBVA.png"
+                        alt="Imagem do site da igreja Comunidade Batista Vidas no Altar.">
+
+                    <div class="projetos__conteudo">
+                        <h2 class="projetos__titulo">Site cbva |</h2>
+
+                        <ul class="projetos__lista">
+                            <li class="projetos__item"><img class="projetos__images" src="/images/html5.png"
+                                    alt="Logo do HTML5."></li>
+                            <li class="projetos__item"><img class="projetos__images" src="/images/css3.png"
+                                    alt="Logo do CSS3."></li>
+                            <li class="projetos__item"><img class="projetos__images" src="/images/js.png"
+                                    alt="Logo do Javascript."></li>
+                            <li class="projetos__item"><img class="projetos__images" src="/images/figma.png"
+                                    alt="Logo do Figma."></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="projetos__card">
+
+                    <img class="projetos__card-img" src="/images/site_nike.png"
+                        alt="Imagem do site da igreja Comunidade Batista Vidas no Altar.">
+
+                    <div class="projetos__conteudo">
+                        <h2 class="projetos__titulo">Site Nike |</h2>
+
+                        <ul class="projetos__lista">
+                            <a href="#" target="_blank">
+                                <li class="projetos__item"><img class="projetos__images" src="/images/html5.png"
+                                        alt="Logo do HTML5."></li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="projetos__item"><img class="projetos__images" src="/images/css3.png"
+                                        alt="Logo do CSS3."></li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="projetos__item"><img class="projetos__images" src="/images/js.png"
+                                        alt="Logo do Javascript."></li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="projetos__item"><img class="projetos__images" src="/images/figma.png"
+                                        alt="Logo do Figma."></li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="projetos__card">
+
+                    <img class="projetos__card-img" src="/images/escola_orvalho.png"
+                        alt="Imagem do site da igreja Comunidade Batista Vidas no Altar.">
+
+                    <div class="projetos__conteudo">
+                        <h2 class="projetos__titulo">Escola Orvalho |</h2>
+
+                        <ul class="projetos__lista">
+                            <li class="projetos__item"><img class="projetos__images" src="/images/html5.png"
+                                    alt="Logo do HTML5."></li>
+                            <li class="projetos__item"><img class="projetos__images" src="/images/css3.png"
+                                    alt="Logo do CSS3."></li>
+                            <li class="projetos__item"><img class="projetos__images" src="/images/js.png"
+                                    alt="Logo do Javascript."></li>
+                            <li class="projetos__item"><img class="projetos__images" src="/images/figma.png"
+                                    alt="Logo do Figma."></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="projetos__card">
+
+                    <img class="projetos__card-img" src="/images/disney.png"
+                        alt="Imagem do site da igreja Comunidade Batista Vidas no Altar.">
+
+                    <div class="projetos__conteudo">
+                        <h2 class="projetos__titulo">Disney+ |</h2>
+
+                        <ul class="projetos__lista">
+                            <li class="projetos__item"><img class="projetos__images" src="/images/html5.png"
+                                    alt="Logo do HTML5."></li>
+                            <li class="projetos__item"><img class="projetos__images" src="/images/css3.png"
+                                    alt="Logo do CSS3."></li>
+                            <li class="projetos__item"><img class="projetos__images" src="/images/js.png"
+                                    alt="Logo do Javascript."></li>
+                            <li class="projetos__item"><img class="projetos__images" src="/images/figma.png"
+                                    alt="Logo do Figma."></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <h2 class="contato__titulo">Contato</h2>
+            <h3 class="contato__subtitulo">Vamos lá?!</h3>
+            <h6 class="contato__descrição">Preencha o formulário abaixo para esclarecermos suas dúvidas e dar início ao
+                seu projeto!</h6>
+
+            <div class="contato__formulário">
+                <form class="formulário" action="mailto:caiomoreira229@gmail.com">
+                    <input class="formulário__placeholders" type="text" name="nome" id="nome" placeholder="Nome completo">
+                    <input class="formulário__placeholders" type="email" name="email" id="email" placeholder="E-mail"
+                    <input class="formulário__placeholders" type="text" name="assunto" id="assunto">
+                    <textarea class="formulário__mensagem" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem..."></textarea>
+                    <input class="formulário__btn" type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <div class="contato__redirecionadores">
+                <ul class="redirecionadores">
+                    <a class="redirecionadores__link" href="mailto:caiomoreira229@gmail.com">
+                        <li><img class="redirecionadores__img" src="/images/email.png" alt="Ícone de e-mail.">
+                            <h2 class="redirecionadores__titulo">Envie um e-mail</h2>
+                            <p class="redirecionadores__texto">caio.workprofile@gmail.com</p>
+                        </li>
+                    </a>
+
+                    <a class="redirecionadores__link" href="#">
+                        <li><img class="redirecionadores__img" src="/images/local.png" alt="Ícone de e-mail.">
+                            <h2 class="redirecionadores__titulo">Localização</h2>
+                            <p class="redirecionadores__texto">São Paulo - SP</p>
+                        </li>
+                    </a>
+
+                    <a class="redirecionadores__link" href="#">
+                        <li><img class="redirecionadores__img" src="/images/telefone.png" alt="Ícone de e-mail.">
+                            <h2 class="redirecionadores__titulo">Chamada ou whatsapp</h2>
+                            <p class="redirecionadores__texto">(11) 95911-9583</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </section>
     </main>
-    
-    <footer class="rodape">
-        <p class="rodape__paragrafo">Desenvolvido por <a class="rodape__paragrafo__link"
-                href="mailto:caiomoreira229@gmail.com">Caio Moreira</a>.</p>
+
+    <footer class="rodapé">
+
+        <div class="rodapé__redes">
+            <ul class="rodapé__redes__lista">
+                <a href="https://github.com/caiomore" target="_blank">
+                    <li><img class="rodapé__redes-link" src="/images/github.png" alt=""></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><img class="rodapé__redes-link" src="/images/whatsapp.png" alt=""></li>
+                </a>
+                <a href="https://www.linkedin.com/in/caiomoreiraa/" target="_blank">
+                    <li><img class="rodapé__redes-link" src="/images/linkedin.png" alt=""></li>
+                </a>
+                <a href="https://www.facebook.com/caio.moreira.7524" target="_blank">
+                    <li><img class="rodapé__redes-link" src="/images/facebook.png" alt=""></li>
+                </a>
+                <a href="https://www.instagram.com/caio.macenaa/" target="_blank">
+                    <li><img class="rodapé__redes-link" src="/images/instagram.png" alt=""></li>
+                </a>
+            </ul>
+        </div>
+
+        <p class="rodapé__créditos">Desenvolvido por <a class="rodapé__créditos__link"
+                href="https://www.linkedin.com/in/caiomoreiraa/" target="_blank">Caio Moreira</a>.</p>
     </footer>
+
 </body>
 
 </html>

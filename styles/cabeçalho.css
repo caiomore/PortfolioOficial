@@ -1,0 +1,147 @@
+.cabeçalho {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+}
+
+.cabeçalho__logo {
+  color: var(--cor-texto-primario);
+  font-weight: 600;
+  font-size: 1.875rem;
+  font-family: var(--font-primaria);
+  padding-left: 1rem;
+}
+
+.cabeçalho__logo__ponto {
+  color: var(--cor-ID-secundario);
+}
+
+.cabeçalho__logo__ponto:hover {
+  color: var(--cor-ID-primario);
+}
+
+.cabeçalho__menu {
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 1rem;
+  width: 10rem;
+  background-color: var(--cor-primeiro-plano);
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.cabeçalho__menu__item {
+  padding: 0.5rem 0;
+}
+
+.cabeçalho__menu__link {
+  text-decoration: none;
+  color: var(--cor-texto-primario);
+  font-size: 22px;
+  font-weight: 300;
+  transition: var(--transições);
+}
+
+.cabeçalho__menu__link:hover {
+  color: var(--cor-ID-primario);
+  font-weight: 600;
+}
+
+#checkbox-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 1.375rem;
+  width: 1.875rem;
+  margin-right: 1rem;
+}
+
+label span {
+  position: absolute;
+  display: block;
+  height: 0.2rem;
+  width: 100%;
+  border-radius: 1.875rem;
+  background: var(--cor-texto-primario);
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+  top: 0;
+}
+
+label span:nth-child(2) {
+  top: 0.5rem;
+}
+
+label span:nth-child(3) {
+  top: 1rem;
+}
+
+#checkbox-menu:checked+label span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 0.5rem;
+}
+
+#checkbox-menu:checked+label span:nth-child(2) {
+  opacity: 0;
+}
+
+#checkbox-menu:checked+label span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 0.5rem;
+}
+
+#checkbox-menu:checked~.cabeçalho__menu {
+  display: block;
+}
+
+.cabeçalho__menu2 {
+  display: none;
+}
+
+@media screen and (min-width: 428px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1728px) {
+
+  .checkbox-menu {
+    display: none;
+  }
+
+  .cabeçalho__logo {
+    font-size: 2.5vw;
+    padding-left: 1.5vw;
+  }
+
+  .cabeçalho__menu {
+    display: none;
+  }
+
+  .cabeçalho__menu2 {
+    display: flex;
+    gap: 2rem;
+    padding-right: 3rem;
+  }
+  
+  .cabeçalho__menu__link2 {
+    text-decoration: none;
+    color: var(--cor-texto-primario);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
