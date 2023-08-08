@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2.5rem;
+  padding: 7rem 0 4rem 0;
 }
 
 .home__logo {
@@ -38,6 +38,11 @@
 
 
 @media screen and (min-width: 428px) {
+
+  .home {
+    padding: 4rem 0 3rem 0;
+  }
+
   .home__logo {
     width: 19.563rem;
     height: 21.063rem;
@@ -49,6 +54,33 @@
 
   .home__texto {
     display: block;
+    margin-top: 2.5rem;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+
+  .home {
+    flex-direction: row-reverse;
+    justify-content: center;
+    column-gap: 3.5rem;
+    padding: 7rem 0 4rem 0;
+  }
+
+  .home__logo {
+    width: 22rem;
+    height: 23rem;
+  }
+
+  .home__texto__titulo {
+    color: var(--cor-texto-primario);
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .home__texto__subtitulo {
+    font-size: 1.4rem;
   }
 }
 
@@ -78,9 +110,9 @@
 
 
 @media screen and (min-width: 1728px) {
-  
+
   .home {
-    padding-top: 12vw;
+    padding-top: 10.5vw;
     column-gap: 11.063rem;
   }
 
