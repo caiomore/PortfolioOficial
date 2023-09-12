@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="croppie.css"/>
+    <link rel="stylesheet" href="croppie.css" />
     <title>Portfolio</title>
 </head>
 
@@ -30,7 +30,7 @@
             </ul>
 
             <ul class="cabeçalho__menu2">
-                <li class="cabeçalho__menu__item2"><a class="cabeçalho__menu__link2" href="#">Home</a></li>
+                <li class="cabeçalho__menu__item2"><a class="cabeçalho__menu__link2" href="">Home</a></li>
                 <li class="cabeçalho__menu__item2"><a class="cabeçalho__menu__link2" href="#">Sobre mim</a></li>
                 <li class="cabeçalho__menu__item2"><a class="cabeçalho__menu__link2" href="#">Projetos</a></li>
                 <li class="cabeçalho__menu__item2"><a class="cabeçalho__menu__link2" href="#">Contato</a></li>
@@ -39,7 +39,8 @@
     </header>
 
     <main>
-        <section class="home">
+        <section class="home" id="home">
+
             <img src="/images/CM.png" class="home__logo" alt="Logo Caio Moreira.">
 
             <div class="home__habilidades">
@@ -67,6 +68,7 @@
                 <h2 class="home__texto__titulo">Caio Moreira</h2>
                 <h6 class="home__texto__subtitulo">FrontEnd Developer</h6>
             </div>
+
         </section>
 
         <section class="sobre">
@@ -98,8 +100,8 @@
                             entendo o funcionamento, e amo colocar a mão na massa para dar cara e vida aos algoritmos.
                         </p>
 
-                        <p class="texto">Avançando para hoje, tenho o privilégio de construir softwares para uma <span
-                                class="seminegrito">agência de
+                        <p class="texto">Avançando para hoje, tenho o privilégio de construir softwares e aplicativos
+                            para uma <span class="seminegrito">agência de
                                 marketing</span>, <span class="seminegrito">duas
                                 igrejas</span> e uma <span class="seminegrito">start-up</span>.</p>
                     </div>
@@ -140,35 +142,36 @@
             <h2 class="page__titulo">Projetos</h2>
 
             <div class="projetos__container">
-                <div class="projetos__card">
 
-                    <img class="projetos__card-img" src="/images/Site_CBVA.png"
-                        alt="Imagem do site da igreja Comunidade Batista Vidas no Altar.">
+                <a href="https://www.eyecarehealth.com.br/" target="_blank">
+                    <div class="projetos__card">
 
-                    <div class="projetos__conteudo">
-                        <h2 class="projetos__titulo">Site cbva |</h2>
+                        <img class="projetos__card-img" src="/images/Eyecare Health.png"
+                            alt="Imagem do site da Eyecare BI Web.">
 
-                        <ul class="projetos__lista">
-                            <li class="projetos__item"><img class="projetos__images" src="/images/html5.png"
-                                    alt="Logo do HTML5."></li>
-                            <li class="projetos__item"><img class="projetos__images" src="/images/css3.png"
-                                    alt="Logo do CSS3."></li>
-                            <li class="projetos__item"><img class="projetos__images" src="/images/js.png"
-                                    alt="Logo do Javascript."></li>
-                            <li class="projetos__item"><img class="projetos__images" src="/images/figma.png"
-                                    alt="Logo do Figma."></li>
-                        </ul>
+                        <div class="projetos__conteudo">
+                            <h2 class="projetos__titulo">EyecareBI web |</h2>
+
+                            <ul class="projetos__lista">
+                                <li class="projetos__item"><img class="projetos__images" src="/images/html5.png"
+                                        alt="Logo do HTML5."></li>
+                                <li class="projetos__item"><img class="projetos__images" src="/images/css3.png"
+                                        alt="Logo do CSS3."></li>
+                                <li class="projetos__item"><img class="projetos__images" src="/images/js.png"
+                                        alt="Logo do Javascript."></li>
+                                <li class="projetos__item"><img class="projetos__images" src="/images/figma.png"
+                                        alt="Logo do Figma."></li>
+                            </ul>
+                        </div>
                     </div>
-
-                </div>
+                </a>
 
                 <div class="projetos__card">
 
-                    <img class="projetos__card-img" src="/images/site_nike.png"
-                        alt="Imagem do site da igreja Comunidade Batista Vidas no Altar.">
+                    <img class="projetos__card-img" src="/images/Glauco.png" alt="Imagem do app Glauco.">
 
                     <div class="projetos__conteudo">
-                        <h2 class="projetos__titulo">Site Nike |</h2>
+                        <h2 class="projetos__titulo">Glauco app |</h2>
 
                         <ul class="projetos__lista">
                             <a href="#" target="_blank">
@@ -189,52 +192,56 @@
                             </a>
                         </ul>
                     </div>
-
                 </div>
 
-                <div class="projetos__card">
+                <a href="https://site-cbva.vercel.app/" target="_blank">
+                    <div class="projetos__card">
 
-                    <img class="projetos__card-img" src="/images/escola_orvalho.png"
-                        alt="Imagem do site da igreja Comunidade Batista Vidas no Altar.">
+                        <img class="projetos__card-img" src="/images/Site_CBVA.png"
+                            alt="Imagem do site da igreja comunidade batista vidas no altar.">
 
-                    <div class="projetos__conteudo">
-                        <h2 class="projetos__titulo">Escola Orvalho |</h2>
+                        <div class="projetos__conteudo">
+                            <h2 class="projetos__titulo">CBVA Church |</h2>
 
-                        <ul class="projetos__lista">
-                            <li class="projetos__item"><img class="projetos__images" src="/images/html5.png"
-                                    alt="Logo do HTML5."></li>
-                            <li class="projetos__item"><img class="projetos__images" src="/images/css3.png"
-                                    alt="Logo do CSS3."></li>
-                            <li class="projetos__item"><img class="projetos__images" src="/images/js.png"
-                                    alt="Logo do Javascript."></li>
-                            <li class="projetos__item"><img class="projetos__images" src="/images/figma.png"
-                                    alt="Logo do Figma."></li>
-                        </ul>
+                            <ul class="projetos__lista">
+                                <li class="projetos__item"><img class="projetos__images" src="/images/html5.png"
+                                        alt="Logo do HTML5."></li>
+                                <li class="projetos__item"><img class="projetos__images" src="/images/css3.png"
+                                        alt="Logo do CSS3."></li>
+                                <li class="projetos__item"><img class="projetos__images" src="/images/js.png"
+                                        alt="Logo do Javascript."></li>
+                                <li class="projetos__item"><img class="projetos__images" src="/images/figma.png"
+                                        alt="Logo do Figma."></li>
+                            </ul>
+                        </div>
+
                     </div>
+                </a>
 
-                </div>
+                <a href="https://apps.apple.com/br/app/eyecarebi/id1668563298" target="_blank">
+                    <div class="projetos__card">
 
-                <div class="projetos__card">
+                        <img class="projetos__card-img" src="/images/EcareBI app.png"
+                            alt="Imagem do aplicativo EcareBI.">
 
-                    <img class="projetos__card-img" src="/images/disney.png"
-                        alt="Imagem do site da igreja Comunidade Batista Vidas no Altar.">
+                        <div class="projetos__conteudo">
+                            <h2 class="projetos__titulo">EyecareBI app |</h2>
 
-                    <div class="projetos__conteudo">
-                        <h2 class="projetos__titulo">Disney+ |</h2>
+                            <ul class="projetos__lista">
+                                <li class="projetos__item"><img class="projetos__images" src="/images/html5.png"
+                                        alt="Logo do HTML5."></li>
+                                <li class="projetos__item"><img class="projetos__images" src="/images/css3.png"
+                                        alt="Logo do CSS3."></li>
+                                <li class="projetos__item"><img class="projetos__images" src="/images/js.png"
+                                        alt="Logo do Javascript."></li>
+                                <li class="projetos__item"><img class="projetos__images" src="/images/figma.png"
+                                        alt="Logo do Figma."></li>
+                            </ul>
+                        </div>
 
-                        <ul class="projetos__lista">
-                            <li class="projetos__item"><img class="projetos__images" src="/images/html5.png"
-                                    alt="Logo do HTML5."></li>
-                            <li class="projetos__item"><img class="projetos__images" src="/images/css3.png"
-                                    alt="Logo do CSS3."></li>
-                            <li class="projetos__item"><img class="projetos__images" src="/images/js.png"
-                                    alt="Logo do Javascript."></li>
-                            <li class="projetos__item"><img class="projetos__images" src="/images/figma.png"
-                                    alt="Logo do Figma."></li>
-                        </ul>
                     </div>
+                </a>
 
-                </div>
             </div>
         </section>
 
@@ -246,10 +253,12 @@
 
             <div class="contato__formulário">
                 <form class="formulário" action="mailto:caiomoreira229@gmail.com">
-                    <input class="formulário__placeholders" type="text" name="nome" id="nome" placeholder="Nome completo">
+                    <input class="formulário__placeholders" type="text" name="nome" id="nome"
+                        placeholder="Nome completo">
                     <input class="formulário__placeholders" type="email" name="email" id="email" placeholder="E-mail"
-                    <input class="formulário__placeholders" type="text" name="assunto" id="assunto">
-                    <textarea class="formulário__mensagem" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem..."></textarea>
+                        <input class="formulário__placeholders" type="text" name="assunto" id="assunto">
+                    <textarea class="formulário__mensagem" name="mensagem" id="mensagem" cols="30" rows="10"
+                        placeholder="Mensagem..."></textarea>
                     <input class="formulário__btn" type="submit" value="Enviar">
                 </form>
             </div>

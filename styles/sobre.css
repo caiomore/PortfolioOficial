@@ -37,7 +37,7 @@
 
 .habilidades__linha {
   border-color: var(--cor-ID-primario);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .habilidades__lista {
@@ -46,15 +46,15 @@
 }
 
 .habilidades__images {
-  width: 7vw;
+  width: 1.4rem;
 }
 
 .habilidades__titulo {
-  padding-left: 1.8rem;
+  padding-left: 0.5rem;
   color: var(--cor-texto-primario);
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 4vw;
+  font-size: 0.730rem;
 }
 
 @media screen and (min-width: 428px) {
