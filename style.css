@@ -32,6 +32,10 @@ body {
   font-family: var(--font-primaria);
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 .page__titulo {
   color: var(--cor-texto-primario);
   text-transform: uppercase;
@@ -51,6 +55,34 @@ body {
 
 .italico {
   font-style: italic;
+}
+
+/* =============================================================== */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 50px;
+  height: 50px;
+  background-color: #363636;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn::after {
+  content: "↑";
+  font-size: 32px;
+  font-weight: bold;
+  color: aliceblue;
+  transition: margin-top 250ms;
+}
+
+.btn:hover::after {
+  margin-top:-8px;
 }
 
 @media screen and (min-width: 1728px) {
