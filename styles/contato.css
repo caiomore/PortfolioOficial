@@ -1,3 +1,7 @@
+#contato {
+  padding-top: 3rem;
+}
+
 .contato {
   display: flex;
   margin-top: 7rem;
@@ -171,6 +175,7 @@
     height: 5rem;
     font-size: 1.75rem;
     margin-bottom: 7.188rem;
+    width: 50rem;
   }
 }
 

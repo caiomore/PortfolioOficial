@@ -38,6 +38,7 @@ body {
   font-weight: 800;
   font-size: 1rem;
   margin: 0 0 2rem 10vw;
+  padding-top: 2rem;
 }
 
 .seminegrito {
@@ -50,4 +51,10 @@ body {
 
 .italico {
   font-style: italic;
+}
+
+@media screen and (min-width: 1728px) {
+  .page__titulo {
+    font-size: 1.6rem;
+  }
 }
